@@ -1,9 +1,9 @@
-class Matematica {
- static soma(a, b){
-    return a + b;    
+const arr = [1,2,3,4,5,6];
 
- }
-}
+const newArr =  arr.map(item => item *2);
 
-console.log(Matematica.soma(1,2));
-    
+console.log(newArr);
+
+const teste = () => ({nome: 'Ciro'});
+
+console.log(teste());
