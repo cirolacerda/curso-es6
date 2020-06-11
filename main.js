@@ -1,9 +1,20 @@
-const arr = [1,2,3,4,5,6];
+//Rest
 
-const newArr =  arr.map(item => item *2);
+function soma(a, b, ...params){
+    return params;
+}
 
-console.log(newArr);
+console.log(soma(1,2,3,4,5,6,7));
 
-const teste = () => ({nome: 'Ciro'});
 
-console.log(teste());
+//Spread
+
+const usuario1 = {
+    nome: 'Ciro',
+    idade: 30,
+    empresa:'SirOric'
+};
+
+const usuario2 = { ... usuario1, nome: 'Ciro Lacerda'};
+
+console.log(usuario2);
